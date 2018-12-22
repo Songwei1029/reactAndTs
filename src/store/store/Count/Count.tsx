@@ -1,7 +1,7 @@
 // 需要使用到thunk，所以引入中间件applyMiddleware
 import { createStore, applyMiddleware } from "redux";
 // 引入reducers
-import reducers from "./reducers";
+import reducers from "../../reducer/Reducers";
 // 引入redux-thunk，处理异步
 // 现在主流处理异步的是saga和thunk
 import thunk from "redux-thunk";

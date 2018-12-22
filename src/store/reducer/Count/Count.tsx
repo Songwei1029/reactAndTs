@@ -1,6 +1,6 @@
-import { Counter } from "../../types"
-import { Action } from "../actions/counter"
-import * as types from "../action-types"
+import { Counter } from "../../types/types"
+import { Action } from "../../actions/Count/Count"
+import * as types from "../../actions/Count/Types/CountTypes"
 let initState: Counter = { number:0 }
 export default function (state: Counter=initState,action:Action) {
   switch (action.type) {

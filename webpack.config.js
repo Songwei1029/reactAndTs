@@ -22,7 +22,12 @@ module.exports = {
   // 解析路径，查找模块的时候使用
   resolve:{
     // 一般写模块不会写后缀，在这里配置好相应的后缀，那么当我们不写后缀时，会按照这个后缀优先查找
-    extensions:[".ts",'.tsx','.js','.json']
+    extensions:[".ts",'.tsx','.js','.json'],
+    // alias: {
+    //   '@': resolve('src'),
+    //   'src': resolve('src'),
+    //   'common':resolve('src/components/common')
+    // }
   },
   // 解析处理模块的转化
   module:{

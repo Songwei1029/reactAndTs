@@ -1,16 +1,14 @@
 import * as React from "react";
 import * as ReactDom from "react-dom";
 import { Provider } from "react-redux";
-import store from './store'
+import store from './store/store/Count/Count'
 // 引入路由
 // 路由的容器:HashRouter as Router
 // 路由的规格:Route
 // Link组件
 // import { BrowserRouter as Router,Route,Link } from "react-router-dom"
 import { HashRouter as Router,Route,Link } from "react-router-dom";
-import CounterComponent from "./components/Counter";
-import CounterComponent2 from "./components/Counter2";
-import Counter from "./components/Counter";
+import CounterComponent from "./components/Count/Counter";
 import Login from "./pages/login/Login";
 
 ReactDom.render((
@@ -29,7 +27,6 @@ ReactDom.render((
         {/* 为了避免home组件一直渲染，我们可以添加属性exact */}
         <Route exact path="/" component={Login}/>
         <Route path="/counter" component={CounterComponent}/>
-        <Route path="/counter2" component={CounterComponent2} />
       </React.Fragment>
     </Router>
   </Provider>

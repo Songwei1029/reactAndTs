@@ -6,7 +6,7 @@ export default class Login extends PureComponent {
     return (
       <Fragment>
         <span style={{ color: 'red'}}>
-          <Link to="/counter">Counter</Link>
+          <Link to="/counter">前往计数器</Link>
         </span>
       </Fragment>
     )

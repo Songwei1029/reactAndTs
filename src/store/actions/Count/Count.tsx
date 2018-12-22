@@ -1,4 +1,4 @@
-import * as types from "../action-types";
+import * as types from "./Types/CountTypes";
 // 定义两个接口，分别约束add和subtract的type类型
 export interface Add{
   type:typeof types.ADD
@@ -9,7 +9,7 @@ export interface Subtract{
 // 再导出一个type
 // type是用来给类型起别名的
 // 这个actions里是一个对象，会有很多函数，每个函数都会返回一个action
-// 而 ./store/reducers/index.tsx中的action会是下面某一个函数的返回值
+// 而reducers中的action会是下面某一个函数的返回值
 
 export type Action = Add | Subtract
 
