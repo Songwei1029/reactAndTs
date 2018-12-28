@@ -2,4 +2,4 @@
 npm install
 
 # 开发
-npm start
+npm run dev
